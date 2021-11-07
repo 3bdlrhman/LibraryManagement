@@ -1,5 +1,5 @@
 # Library Management System
-## This Repository Contains a very simple ** Library Management System ** Developed as an ASP.NET MVC 5 Application
+## This Repository Contains a very simple **Library Management System** Developed as an ASP.NET MVC 5 Application
 
 ### The main System user is a Librarian who can take the following Actions:
 - Add A new Book to the Database
@@ -19,7 +19,7 @@
 ### For a Returning action to be done:
 - Book name & Borrower name should be on the list
 - A matching record with the same Book name & Borrower name Must be found
-- The matching record should have a property ** DeliveredBack ** equals * false *
+- The matching record should have a property **DeliveredBack** equals *FALSE*
 
-#### There are also a class library project for Unit Testing which contains tests for only the ** Borrowings Controller **
+#### There are also a class library project for Unit Testing which contains tests for only the **Borrowings Controller**
 #### Testing all the cases of Borrowing a Book OR Returning it Back
