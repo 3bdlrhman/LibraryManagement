@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<div class="jumbotron">
+    <h1>Library Management System</h1>
+    <h2>Using This System a Librarian Can:</h2>
+    <ul>
+        <li>Add a new Book To The Database</li>
+        <li>Add a new Borrower To The Database</li>
+        <li>Perform a Borrowing Operation</li>
+        <li>Returning a Book That was Borrowed</li>
+    </ul>
+    @Html.ActionLink("Borrowing History", "Index", "Borrowings", null, new { @class= "btn btn-info"})
+</div>

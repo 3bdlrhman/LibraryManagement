@@ -1,0 +1,44 @@
+﻿@model IEnumerable<LibraryManagement.Models.Borrowings>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Borrowings</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.borrower.BorrowerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.book.BookName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliverdBack)
+        </th>
+
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.borrower.BorrowerName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.book.BookName)
+    </td>
+    <td>
+        @{ var checkDelivered = item.DeliverdBack ? "Returned" : "Not Returned";}
+        @checkDelivered
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.BorrowingID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.BorrowingID })
+    </td>
+</tr>
+}
+
+</table>
